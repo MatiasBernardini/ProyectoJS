@@ -14,8 +14,7 @@ if (edad < 0 || edad > 99 ){
     }else { 
         if (edad >=18){
         alert ("Usted es Mayor de Edad")
-    }
-        if (edad <18){
+    }else {
         alert ("Usted es menor de edad")
     }
 }
