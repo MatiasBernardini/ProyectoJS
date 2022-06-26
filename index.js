@@ -1,3 +1,6 @@
+window.alert ("¡¡Bienvenido al fixture del mundial de Qatar 2022!!")
+window.alert ("Primero antes que nada, nos gustaria saber como se llama")
+
 let nombre = prompt ("Ingrese su Nombre")
 let apellido = prompt ("Ingrese su Apellido")
 
@@ -6,6 +9,8 @@ if (nombre !== "" && apellido !== ""){
 } else{
     alert ("Tiene que ingresar su nombre y apellido")
 }
+
+window.alert ("Tambien nos encantaría saber su edad")
 
 let edad = parseInt (prompt ("Ingrese su Edad"))
 
@@ -19,7 +24,17 @@ if (edad < 0 || edad > 99 ){
     }
 }
 
-let paises = parseInt (prompt ( "A cuál selección apoyara para el mundial: \n 1.Argentina \n 2.Uruguay \n 3.Mexico \n 4.España" ) )
+window.alert ("Este es un simulador en especifico del grupo C")
+
+let jugadoresArgentinos = [ "Messi ", "De Paul ", "Di Maria " ]
+let jugadoresMexicanos = [ "Lozano ", "Ochoa ", "Raúl Jiménez " ]
+let jugadoresPolacos = [ "Lewandowski ", "Zieliński " ]
+let jugadoresArabes = [ "Mohammed Al-Sahlawi " ]
+
+let mejoresJugadores = jugadoresArgentinos.concat(jugadoresMexicanos, jugadoresPolacos, jugadoresArabes)
+alert ("Los mejores jugadores de este grupo son: " + mejoresJugadores)
+
+let paises = parseInt (prompt ( "Ya sabiendo los mejores jugadores de este grupo, a cuál selección del grupo C apoyara: \n 1.Argentina \n 2.Arabia Saudita \n 3.Mexico \n 4.Polonia" ) )
 
 if (isNaN (paises)){
     alert ("Tiene que seleccionar un número")
@@ -27,11 +42,11 @@ if (isNaN (paises)){
     if (paises === 1){
         alert ("Usted va con Argentina")
     } else if (paises ===2){
-        alert ("Usted va con Uruguay")
+        alert ("Usted va con Arabia Saudita")
     } else if (paises === 3){
         alert ("Usted va con Mexico")
     } else if (paises === 4){
-        alert ("Usted va con España")
+        alert ("Usted va con Polonia")
     } else {
         alert ("Tiene que seleccionar una opción")
     }
@@ -54,3 +69,4 @@ function golesPromedio (){
 }
 
 golesPromedio()
+
