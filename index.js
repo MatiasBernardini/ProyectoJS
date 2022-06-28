@@ -1,5 +1,5 @@
-window.alert ("¡¡Bienvenido al fixture del mundial de Qatar 2022!!")
-window.alert ("Primero antes que nada, nos gustaria saber como se llama")
+alert ("¡¡Bienvenido al fixture del mundial de Qatar 2022!!")
+alert ("Primero antes que nada, nos gustaria saber como se llama")
 
 let nombre = prompt ("Ingrese su Nombre")
 let apellido = prompt ("Ingrese su Apellido")
@@ -10,7 +10,7 @@ if (nombre !== "" && apellido !== ""){
     alert ("Tiene que ingresar su nombre y apellido")
 }
 
-window.alert ("Tambien nos encantaría saber su edad")
+alert ("Tambien nos encantaría saber su edad")
 
 let edad = parseInt (prompt ("Ingrese su Edad"))
 
@@ -24,7 +24,7 @@ if (edad < 0 || edad > 99 ){
     }
 }
 
-window.alert ("Este es un simulador en especifico del grupo C")
+alert ("Este es un simulador en especifico del grupo C")
 
 let jugadoresArgentinos = [ "Messi ", "De Paul ", "Di Maria " ]
 let jugadoresMexicanos = [ "Lozano ", "Ochoa ", "Raúl Jiménez " ]
