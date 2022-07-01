@@ -25,13 +25,19 @@ if (edad < 0 || edad > 99 ){
 }
 
 alert ("Este es un simulador en especifico del grupo C")
+alert ("A continuación se le mostrará las selecciones que componen este grupo")
 
-let jugadoresArgentinos = [ "Messi ", "De Paul ", "Di Maria " ]
-let jugadoresMexicanos = [ "Lozano ", "Ochoa ", "Raúl Jiménez " ]
-let jugadoresPolacos = [ "Lewandowski ", "Zieliński " ]
-let jugadoresArabes = [ "Mohammed Al-Sahlawi " ]
+const selecciones = ["Argentina", "Mexico", "Polonia", "Arabia Saudita"];
+selecciones.forEach ((seleccion) => {
+    alert(seleccion)
+})
 
-let mejoresJugadores = jugadoresArgentinos.concat(jugadoresMexicanos, jugadoresPolacos, jugadoresArabes)
+const jugadoresArgentinos = [ "Messi ", "De Paul ", "Di Maria " ]
+const jugadoresMexicanos = [ "Lozano ", "Ochoa ", "Raúl Jiménez " ]
+const jugadoresPolacos = [ "Lewandowski ", "Zieliński " ]
+const jugadoresArabes = [ "Mohammed Al-Sahlawi " ]
+
+const mejoresJugadores = jugadoresArgentinos.concat(jugadoresMexicanos, jugadoresPolacos, jugadoresArabes)
 alert ("Los mejores jugadores de este grupo son: " + mejoresJugadores)
 
 let paises = parseInt (prompt ( "Ya sabiendo los mejores jugadores de este grupo, a cuál selección del grupo C apoyara: \n 1.Argentina \n 2.Arabia Saudita \n 3.Mexico \n 4.Polonia" ) )
